@@ -26,3 +26,39 @@ class BinarySearchTest(unittest.TestCase):
             search['index'],
             msg='should return {count: 4, index: 15} for 16'
         )
+
+    def test_medium_list_search(self):
+        search1 = self.two_to_forty.search(16)
+        search2 = self.two_to_forty.search(40)
+        search3 = self.two_to_forty.search(33)
+        self.assertGreater(
+            5,
+            search1['count'],
+            msg='should return {count: 4, index: 7} for 16'
+        )
+        self.assertEqual(
+            7,
+            search1['index'],
+            msg='should return {count: 4, index: 7} for 16'
+        )
+        self.assertEqual(
+            0,
+            search2['count'],
+            msg='should return {count: 0, index: 19} for 40'
+        )
+        self.assertEqual(
+            19,
+            search2['index'],
+            msg='should return {count: 5, index: 19} for 40'
+        )
+
+        self.assertGreater(
+            4,
+            search3['count'],
+            msg='should return {count: 3, index: -1} for 33'
+        )
+        self.assertEqual(
+            -1,
+            search3['index'],
+            msg='should return {count: 3, index: -1} for 33'
+        )
