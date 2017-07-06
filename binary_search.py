@@ -17,7 +17,7 @@ class BinarySearch(list):
         # Generate list and assign it to class
         for x in range(1, a + 1):
             self.append(x * b)
-        self.length = len(self)
+        self.length = b
 
     def search(self, value) -> dict:
         """
