@@ -36,6 +36,9 @@ It takes 2 arguments, the step and length of list to search
 
 `fing_missing([1, 2, 3], [1, 2, 3, 4])` returns  `4`
 
+## Recreation of Google HomePage
+
+Navigate to the HTML_CSS_google directory and open index.html in browser
 
 # Running the Tests
 
