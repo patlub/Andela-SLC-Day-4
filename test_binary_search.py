@@ -62,3 +62,39 @@ class BinarySearchTest(unittest.TestCase):
             search3['index'],
             msg='should return {count: 3, index: -1} for 33'
         )
+
+    def test_large_list_search(self):
+        search1 = self.ten_to_thousand.search(40)
+        search2 = self.ten_to_thousand.search(880)
+        search3 = self.ten_to_thousand.search(10000)
+        self.assertGreater(
+            7,
+            search1['count'],
+            msg='should return {count: # <= 7, index: 3} for 40'
+        )
+        self.assertEqual(
+            3,
+            search1['index'],
+            msg='should return {count: # <= 7, index: 3} for 40'
+        )
+        self.assertGreater(
+            4,
+            search2['count'],
+            msg='should return {count: # <= 3, index: 87} for 880'
+        )
+        self.assertEqual(
+            87,
+            search2['index'],
+            msg='should return {count: # <= 3, index: 87} for 880'
+        )
+
+        self.assertGreater(
+            7,
+            search3['count'],
+            msg='should return {count: 3, index: -1} for 10000'
+        )
+        self.assertEqual(
+            -1,
+            search3['index'],
+            msg='should return {count: 3, index: -1} for 10000'
+        )
