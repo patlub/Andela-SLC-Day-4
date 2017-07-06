@@ -76,3 +76,30 @@ body {
     margin-top: 2%;
 }
 
+.footer-text {
+    padding: 4%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #757575;
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: small;
+    margin-left: -27px;
+}
+
+#left-footer {
+    display: flex;
+    float: left;
+    margin-right: 55%;
+}
+
+#right-footer {
+    display: flex;
+}
