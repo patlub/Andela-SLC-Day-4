@@ -80,6 +80,10 @@ body {
     padding: 4%;
 }
 
+.footer-text a:link {
+    color: gray;
+}
+
 .footer {
     position: absolute;
     left: 0;
