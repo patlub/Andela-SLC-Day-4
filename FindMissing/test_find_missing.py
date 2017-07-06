@@ -4,6 +4,18 @@ from FindMissing.find_missing import find_missing
 class MissingNumberTest(unittest.TestCase):
     """docstring for MissingNumberTest"""
 
+    def test_args_are_lists(self):
+        self.assertRaises(TypeError, find_missing, 'a', 'b',
+                          msg='Should raise error for non list args')
+
+    def test_list_elements_are_ints(self):
+        self.assertEqual(find_missing(['a'], [5]),
+                         'Lists should only contain integers')
+
+    def test_list_elements_are_positives(self):
+        self.assertEqual(find_missing([-3], [5]),
+                         'Lists should not have negative values')
+
     def test_empty_list(self):
         self.assertEqual(0, find_missing([], []),
                          msg='should return 0 for empty list')
