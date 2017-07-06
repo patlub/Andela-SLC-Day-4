@@ -1,0 +1,78 @@
+html {
+    font: "Roboto", "Droid Sans", sans-serif;
+
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+#glyph-box {
+    margin-top: 3%;
+}
+
+#sign-in-btn {
+    background-color: #4285f4;
+    margin-left: 20%;
+    color: #ffffff;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 90%;
+    border: 1px solid #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+
+}
+
+#icon-bar {
+    display: flex;
+    margin: 1%;
+}
+
+.glyphicon {
+    font-size: 120%;
+    margin-top: 40%;
+}
+
+#logo-box {
+    margin-top: 15%;
+    margin-left: 500px;
+}
+
+#google-search {
+    width: 47%;
+    height: 45px;
+    margin-top: 2%;
+}
+
+.search-btn {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    text-align: center;
+    padding: 2%;
+}
+
+.search-btn:hover{
+    font-weight: bolder;
+    border: 1px solid cornflowerblue;
+}
+
+#buttons-box {
+    display: flex;
+    padding-left: 40%;
+    margin-top: 2%;
+}
+
